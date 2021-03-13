@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EF033F4-E229-41CD-84E3-A5E956F18CE4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tiered_Tech_Small_Grid_Expansion</RootNamespace>
+    <AssemblyName>Tiered Tech Small Grid Expansion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Data\CubeBlocks_Assembler.sbc" />
+    <None Include="Data\CubeBlocks_JumpDrive.sbc" />
+    <None Include="Data\CubeBlocks_Refinery.sbc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="metadata.mod" />
+    <Content Include="Textures\assembler2x.dds" />
+    <Content Include="Textures\assembler4x.dds" />
+    <Content Include="Textures\assembler8x.dds" />
+    <Content Include="Textures\JumpDrive2x.dds" />
+    <Content Include="Textures\JumpDrive4x.dds" />
+    <Content Include="Textures\JumpDrive8x.dds" />
+    <Content Include="Textures\refinery2x.dds" />
+    <Content Include="Textures\refinery4x.dds" />
+    <Content Include="Textures\refinery8x.dds" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
